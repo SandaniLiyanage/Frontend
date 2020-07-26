@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Frontend';
+
+  private activeTreeItem: any = null;
+  
+  selectTree(item) {
+    this.activeTreeItem = item;
+  }
 }
